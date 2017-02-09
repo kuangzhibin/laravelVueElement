@@ -1,0 +1,31 @@
+
+// Fonts
+// @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+// @import "variables";
+
+// Bootstrap
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+[v-cloak] {
+	display: none;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.nav{
+	margin-bottom: 16px;
+}
+
+.main{
+	padding: 20px;
+}
+
+h1{
+	padding: 12px 0;
+}
