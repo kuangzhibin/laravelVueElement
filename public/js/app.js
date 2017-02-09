@@ -12357,8 +12357,12 @@ __webpack_require__(93);
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+//login
+Vue.component('headerNav', __webpack_require__(114));
+Vue.component('login', __webpack_require__(119));
 
-Vue.component('headerNav', __webpack_require__(103));
+// test
+Vue.component('tHeaderNav', __webpack_require__(103));
 Vue.component('example', __webpack_require__(102));
 
 var app = new Vue({
@@ -61903,6 +61907,341 @@ module.exports = function(module) {
 __webpack_require__(31);
 module.exports = __webpack_require__(32);
 
+
+/***/ }),
+/* 111 */,
+/* 112 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+  data: function data() {
+    return {};
+  }
+};
+
+/***/ }),
+/* 113 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(28)();
+// imports
+
+
+// module
+exports.push([module.i, "\n.headerNav[data-v-671b703c] {\n  height: 60px;\n  width: 100%;\n  background: #43b373;\n  line-height: 60px;\n  padding: 0 20px;\n}\n.headerNav .logo-text[data-v-671b703c] {\n    font-size: 26px;\n    color: #fff;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 114 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(116)
+
+var Component = __webpack_require__(29)(
+  /* script */
+  __webpack_require__(112),
+  /* template */
+  __webpack_require__(115),
+  /* scopeId */
+  "data-v-671b703c",
+  /* cssModules */
+  null
+)
+Component.options.__file = "d:\\lvtest\\resources\\assets\\js\\components\\common\\HeaderNav.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] HeaderNav.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-671b703c", Component.options)
+  } else {
+    hotAPI.reload("data-v-671b703c", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 115 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "headerNav"
+  }, [_c('div', {
+    staticClass: "logo-text"
+  }, [_vm._v("昂立CRM 1.0")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-671b703c", module.exports)
+  }
+}
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(113);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(107)("88fc3226", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-671b703c&scoped=true!./../../../../../node_modules/sass-loader/index.js!./../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./HeaderNav.vue", function() {
+     var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-671b703c&scoped=true!./../../../../../node_modules/sass-loader/index.js!./../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./HeaderNav.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 117 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+  name: 'Login',
+  data: function data() {
+    return {
+      form: {
+        ExtensionNumber: '',
+        UserName: '',
+        Password: ''
+      }
+    };
+  },
+
+  methods: {
+    onSubmit: function onSubmit() {
+      console.log('submit!');
+    }
+  }
+
+};
+
+/***/ }),
+/* 118 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(28)();
+// imports
+
+
+// module
+exports.push([module.i, "\n.login{\n    width: 400px;\n    height:382px;\n    padding: 0 30px;\n    border: 1px solid #ebebeb;\n    position: absolute;\n    left: 50%;\n    margin-left: -200px;\n    top:20%;\n}\n.login .title{\n    text-align: center;\n    font:22px/76px;\n    font-weight: 700;\n    color: #000;\n}\n.login_btn{\n    width: 340px;\n    height: 42px;\n    border: 1px solid #ebebeb;\n    background: #43b373;\n    color: #fff;\n    font: 20px/28px \"\\5FAE\\8F6F\\96C5\\9ED1\";\n    text-align: center;\n    line-height:42px;\n    cursor: pointer;\n}\n#ExtensionNumber{\n    margin-top:30px;\n}\n.el-form-item__label {\n    color: #43b373;\n}\n.LoginForm-title{\n    text-align:center;\n    margin-top:30px;\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 119 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(121)
+
+var Component = __webpack_require__(29)(
+  /* script */
+  __webpack_require__(117),
+  /* template */
+  __webpack_require__(120),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "d:\\lvtest\\resources\\assets\\js\\components\\login\\Login.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Login.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-c4d875fa", Component.options)
+  } else {
+    hotAPI.reload("data-v-c4d875fa", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 120 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: "login"
+  }, [_c('h2', {
+    staticClass: "LoginForm-title"
+  }, [_vm._v("登录")]), _vm._v(" "), _c('el-form', {
+    ref: "form",
+    attrs: {
+      "model": _vm.form,
+      "label-width": "80px"
+    }
+  }, [_c('el-form-item', {
+    attrs: {
+      "label": "分机号",
+      "id": "ExtensionNumber"
+    }
+  }, [_c('el-input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.form.ExtensionNumber),
+      expression: "form.ExtensionNumber"
+    }],
+    domProps: {
+      "value": (_vm.form.ExtensionNumber)
+    },
+    on: {
+      "input": function($event) {
+        _vm.form.ExtensionNumber = $event
+      }
+    }
+  })], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "用户"
+    }
+  }, [_c('el-input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.form.UserName),
+      expression: "form.UserName"
+    }],
+    domProps: {
+      "value": (_vm.form.UserName)
+    },
+    on: {
+      "input": function($event) {
+        _vm.form.UserName = $event
+      }
+    }
+  })], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "密码"
+    }
+  }, [_c('el-input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.form.Password),
+      expression: "form.Password"
+    }],
+    domProps: {
+      "value": (_vm.form.Password)
+    },
+    on: {
+      "input": function($event) {
+        _vm.form.Password = $event
+      }
+    }
+  })], 1), _vm._v(" "), _c('div', {
+    staticClass: "login_btn",
+    on: {
+      "click": _vm.onSubmit
+    }
+  }, [_vm._v("登录")])], 1)], 1)])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-c4d875fa", module.exports)
+  }
+}
+
+/***/ }),
+/* 121 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(118);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(107)("257e0470", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-c4d875fa!./../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Login.vue", function() {
+     var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-c4d875fa!./../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Login.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);

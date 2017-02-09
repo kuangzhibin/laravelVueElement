@@ -3,7 +3,7 @@
 @section('title', 'test')
 
 @section('nav')
-  <header-nav></header-nav>
+  <t-header-nav></t-header-nav>
 @endsection
 
 @section('main')
